@@ -17,6 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from PIW_TP1_TM.views import accueilView, documentationView, filmsView, aproposView #Ici aussi
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Importer les vues du fichier views dans urls pour les utiliser les autres pages 
+    path('', accueilView),
+    path('documentation/', documentationView),
+    path('films/', filmsView),
+    path('apropos/', aproposView),
 ]

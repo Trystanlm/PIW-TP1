@@ -54,7 +54,7 @@ ROOT_URLCONF = 'PIW_TP1_TM.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["PIW_TP1_TM/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

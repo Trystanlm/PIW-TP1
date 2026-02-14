@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+</head>
+<body>
+<hr>
+<!-- Bloc header temporaire -->
+{% block header %} HEADER 
+{% endblock %}
+<BR></BR>
+
+<!-- Afficher le bloc du menu -->
+{% include "menu.html" %}
+
+{% block contenu %} 
+
+{% endblock %}
+<BR></BR>
+
+<!-- Bloc footer temporaire -->
+{% block footer %} FOOTER 
+{% endblock %}
+
+</body>
+</html>
