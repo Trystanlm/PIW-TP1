@@ -2,26 +2,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Lien CDN Boostrap 5.3 & CSS Static (Problème de lien) -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinéma - {% block title %}Accueil{% endblock %}</title>
+    
+    <!-- Lien CDN Boostrap 5.3 & CSS Static -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-<hr>
-<!-- Afficher le bloc du menu -->
-{% include "menu.html" %}
+    <!-- Header -->
+    <header class="bg-light border-bottom">
+        <div class="py-2 px-3">
+            <p class="mb-0">Cinéma le Scénario</p>
+        </div>
+    </header>
 
-{% block contenu %} 
+    <!-- Navigation -->
+    {% include "menu.html" %}
 
-{% endblock %}
-<BR></BR>
+    <!-- Contenu principal de chaque page -->
+    {% block contenu %} 
 
-<!-- Bloc footer temporaire -->
-{% block footer %} FOOTER 
-{% endblock %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="bg-light border-top mt-4">
+        <div class="py-2 px-3">
+            <p class="mb-0">Footer - Cinéma le Scénario</p>
+        </div>
+    </footer>
 
 </body>
 </html>

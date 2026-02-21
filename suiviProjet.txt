@@ -1,4 +1,5 @@
-Yo Trystan, choisi on va se répartir le travail par page, le plus important c'est de se décider de qui va faire la page maître et le css vu que ça sera appliqué partout. 
+Trystan : Page maître + Accueil + Boostrap
+Mat : Films + Doc + À propos
 
 
 Page Maître
