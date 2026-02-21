@@ -75,25 +75,27 @@
 ### 📚 Page Documentation (documentation.html)
 
 - ✅ Titre de page "Cinéma - Documentation"
-- ❌ Liste des améliorations apportées au site
-- ❌ Pour chaque amélioration :
+- ✅ Liste des améliorations apportées au site
+- ✅ Pour chaque amélioration :
   - Titre significatif
   - Brève description (petit paragraphe)
-- ❌ Informations réparties sur la largeur de la page
-- ⚠️ Si aucune amélioration : indiquer "Aucune amélioration apportée"
+- ✅ Informations réparties sur la largeur de la page
+- ✅ Modèle Amelioration créé dans models.py
 
-**Améliorations possibles :**
-- Liens URL vers pages de détails des ajouts
-- Système de retour vers page Documentation
+**Améliorations documentées :**
+1. Remplacement des images par véritables affiches
+2. Ajout de boutons pour bandes-annonces
+3. Effet de zoom sur les images au survol
+4. Site responsive avec Bootstrap
 
 ---
 
 ### 🎬 Page Films (films.html)
 
 - ✅ Titre de page "Cinéma - Films"
-- ❌ **Liste de minimum 6 films** (actuellement 0)
-- ❌ **Affichage sur TROIS colonnes**
-- ❌ Pour chaque film, afficher :
+- ✅ **Liste de minimum 6 films** (6 films ajoutés)
+- ✅ **Affichage sur TROIS colonnes**
+- ✅ Pour chaque film, afficher :
   - Nom
   - Date
   - Heure
@@ -102,12 +104,14 @@
   - Description
   - Image
   - MeilleurVendeur
-- ❌ Données provenant de "LesFilms.txt" (2 films fournis)
-- ❌ Ajouter 4 films supplémentaires
+- ✅ Données provenant de "LesFilms.txt" (2 films fournis)
+- ✅ Ajouter 4 films supplémentaires
 
-**Améliorations possibles :**
-- Zone contenu déroulable (pied de page toujours visible)
-- Lien du titre vers bande annonce (externe)
+**Améliorations réalisées :**
+- ✅ Liens des boutons vers bandes-annonces (YouTube)
+- ✅ Effet hover zoom sur les images de films
+- ✅ Mise en page responsive avec Bootstrap grid
+- ✅ Images en format poster (ratio 1382:2048)
 
 ---
 
@@ -118,9 +122,10 @@
 - ✅ Styles appliqués sur les pages
 - ✅ Image de fond header (wallpaper.png)
 - ✅ Configuration langue française (fr-ca)
-- ❌ Adaptation en fonction du format d'affichage
-- ❌ Adaptation en fonction de la résolution
-- ❌ Design responsive mobile/tablette
+- ✅ Adaptation en fonction du format d'affichage (container-lg)
+- ✅ Design responsive avec Bootstrap grid system
+- ✅ Police personnalisée (Trebuchet MS)
+- ✅ Effet hover sur les images de films (zoom 1.05)
 
 ---
 
@@ -138,13 +143,13 @@
 
 | Critère | Pondération | Statut |
 |---------|-------------|--------|
-| Utilisation appropriée du langage de balisage | 20% | � Partiellement fait |
-| Création et utilisation des feuilles de styles | 5% | 🟢 Partiellement fait |
-| Intégration correcte des images | 10% | 🟡 En cours |
-| Adaptation format d'affichage et résolution | 5% | 🔴 À faire |
-| Interactions interface web - utilisateur | 30% | 🟢 Partiellement fait |
+| Utilisation appropriée du langage de balisage | 20% | 🟢 Fait |
+| Création et utilisation des feuilles de styles | 5% | 🟢 Fait |
+| Intégration correcte des images | 10% | 🟢 Fait |
+| Adaptation format d'affichage et résolution | 5% | 🟢 Fait |
+| Interactions interface web - utilisateur | 30% | 🟢 Fait |
 | Qualité de l'application | 20% | 🟡 En cours |
-| Documentation | 10% | 🔴 À faire |
+| Documentation | 10% | 🟢 Fait |
 
 ---
 
@@ -164,30 +169,33 @@
 2. ✅ Page maîtresse avec header, menu, footer
 3. ✅ Navigation entre les 4 pages
 4. ✅ Bootstrap installé
-5. ✅ CSS personnalisé
+5. ✅ CSS personnalisé avec effets hover
 6. ✅ Titres de pages appropriés
 7. ✅ Séparation propre header/menu/footer
 8. ✅ Image wallpaper en background du header
 9. ✅ Footer complet (adresse, date dynamique, courriel, responsables)
 10. ✅ Date en français avec Django (fr-ca)
-11. ✅ Lorem ipsum ajouté dans toutes les pages
+11. ✅ Page Films complète avec 6 films sur 3 colonnes
+12. ✅ Toutes les données de films affichées (nom, date, heure, salle, catégorie, description, image, meilleurVendeur)
+13. ✅ Page Documentation avec 4 améliorations documentées
+14. ✅ Images en format poster avec aspect-ratio
+15. ✅ Boutons bandes-annonces fonctionnels
+16. ✅ Effet hover zoom sur images (scale 1.05)
+17. ✅ Site responsive avec Bootstrap container-lg et grid
+18. ✅ Modèle Amelioration créé dans models.py
+19. ✅ Police personnalisée (Trebuchet MS)
 
 ## 🔴 Priorités - Ce qui reste à faire
 
 ### 🔥 Priorité HAUTE
-1. **Page Films** - Affichage 6 films sur 3 colonnes
-2. **Page Accueil** - 2 colonnes (description + image)
-3. **Page À Propos** - 2 colonnes (environnement + concepteurs)
+1. **Page Accueil** - 2 colonnes (description + image)
+2. **Page À Propos** - 2 colonnes (environnement + concepteurs)
 
-### 🟡 Priorité MOYENNE
-4. Images dans les pages de contenu
-5. Responsive design
-6. Page Documentation avec améliorations
+
 
 ### ⚪ Priorité BASSE
-7. Améliorations bonus
-8. Fichier eval_coequipier.txt
-9. Compression du dossier pour remise
+4. Fichier eval_coequipier.txt
+5. Compression du dossier pour remise
 
 ---
 
