@@ -3,34 +3,29 @@
 {% block title %}Films{% endblock %}
 
 {% block contenu %}
-<div class="container">
+<div class="container-lg films-page">
+    <br>
     <h1>Liste des films à l'affiche</h1>
     
-    <table class="table table-light">
-        <thead>
-            <th scope="col-1">Image</th>
-            <th scope="col-2">Nom</th>
-            <th scope="col-1">Catégorie</th>
-            <th scope="col-1">Date</th>
-            <th scope="col-1">Heure</th>
-            <th scope="col-1">Salle</th>
-            <th scope="col-3">Description</th>
-            <th scope="col-1">Meilleur vendeur</th>
-        </thead>
-        <tbody>
-            {% for film in films %}
-            <tr>
-                <td><img src="{{ film.image }}" alt="{{ film.nom }}" style="width: 100px; height: auto;"></td>
-                <th>{{ film.nom }}</th>
-                <td>{{ film.categorie }}</td>
-                <td>{{ film.date }}</td>
-                <td>{{ film.heure }}</td>
-                <td>{{ film.salle }}</td>
-                <td>{{ film.description }}</td>
-                <td>{% if film.meilleurVendeur == 'oui' %}Oui{% else %}Non{% endif %}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    {% for film in films %}
+    <div class="row mb-5 p-4 bg-light rounded">
+        <div class="col-md-4">
+            <img src="{{ film.image }}" alt="{{ film.nom }}" class="rounded" style="width: 100%;height: 100%;object-fit: cover">
+        </div>
+        <div class="col-md-4">
+            <h2 class="mb-3 fw-bold">{{ film.nom }}</h2>
+            <p class="mb-2"><strong>Date :</strong> {{ film.date }}</p>
+            <p class="mb-2"><strong>Heure :</strong> {{ film.heure }}</p>
+            <p class="mb-2"><strong>Catégorie:</strong> {{ film.categorie }}</p>
+            <p class="mb-2"><strong>Salle:</strong> {{ film.salle }}</p>
+            <p class="mb-2"><strong>Meilleur vendeur:</strong> {{ film.meilleurVendeur }}</p>
+        </div>
+        <div class="col-md-4">
+            <h4 class="mb-3">Description</h4>
+            <p>{{ film.description }}</p>
+            <a href="{{ film.bandeAnnonce }}" class="btn btn-info mt-3" target="_blank">Voir la bande-annonce</a>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}

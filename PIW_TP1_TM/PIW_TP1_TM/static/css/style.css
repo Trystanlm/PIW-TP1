@@ -1,12 +1,27 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(13, 2, 44);
-    color: rgb(255, 94, 0);
+    background-color: rgb(5, 1, 29);
+    color: rgb(0, 0, 0);
 }
 
 .header-cinema {
     background-image: url('../css/images/wallpaper.png'); /* À changer plus tard */
     background-size: cover;
     background-position: center;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.films-page img {
+    transition: transform 0.3s ease;
+}
+
+.films-page img:hover {
+    transform: scale(1.05);
 }

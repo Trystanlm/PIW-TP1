@@ -16,16 +16,20 @@ def filmsView(request):
          'salle': '1', 
          'categorie': 'Drame',
          'description': 'Témoin de nombreux événements marquants des années 60 et 70, un homme simple d\'esprit et au grand cœur inspire ceux qui l\'entourent à travers son optimisme constant.',
-         'image': 'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/09/Forrest-Gump-Tom-Hanks.jpg',
-         'meilleurVendeur': 'oui'},
+         'image': 'https://i.ebayimg.com/images/g/y9gAAOSwUQhi-9Nq/s-l1200.jpg',
+         'meilleurVendeur': 'oui',
+         'bandeAnnonce': 'https://youtu.be/7pDDuroFBGM'},
+        
         {'nom': "Bienvenue chez les Ch'tis", 
          'date': '06/02/2023', 
          'heure': '20:30', 
          'salle': '2', 
          'categorie': 'Comédie',
          'description': 'Témoin de nombreux événements marquants des années 60 et 70, un homme simple d\'esprit et au grand cœur inspire ceux qui l\'entourent à travers son optimisme constant.',
-         'image': 'https://img.lapresse.ca/924x615/201207/17/531046.jpg',
-         'meilleurVendeur': 'non'},
+         'image': 'https://fr.web.img5.acsta.net/medias/nmedia/18/64/74/53/18889951.jpg',
+         'meilleurVendeur': 'non',
+         'bandeAnnonce': 'https://youtu.be/OycTfchnopU'},
+        
         {'nom': "Shrek 2", 
          'date': '07/02/2023', 
          'heure': '18:00', 
@@ -33,7 +37,9 @@ def filmsView(request):
          'categorie': 'Animation',
          'description': 'Shrek et Fiona reviennent de leur lune de miel pour rencontrer les parents de celle-ci. Mais ces derniers ne s\'attendaient pas à ce que leur fille épouse un ogre.',
          'image': 'https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_.jpg',
-         'meilleurVendeur': 'non'},
+         'meilleurVendeur': 'non',
+         'bandeAnnonce': 'https://youtu.be/xBgSfhp5Fxo'},
+        
         {'nom': "Le Loup de Wall Street", 
          'date': '08/02/2023', 
          'heure': '21:00', 
@@ -41,15 +47,19 @@ def filmsView(request):
          'categorie': 'Biographie',
          'description': 'L\'histoire vraie de Jordan Belfort, courtier en bourse à New York qui a bâti une fortune colossale grâce à la corruption et la fraude avant de tout perdre.',
          'image': 'https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg',
-         'meilleurVendeur': 'non'},
+         'meilleurVendeur': 'non',
+         'bandeAnnonce': 'https://youtu.be/GT9UfSqBz9o'},
+        
         {'nom': "Oppenheimer", 
          'date': '09/02/2023', 
          'heure': '19:30', 
          'salle': '5', 
          'categorie': 'Biographie',
          'description': 'L\'histoire de J. Robert Oppenheimer, physicien théoricien qui a dirigé le développement de la première bombe atomique dans le cadre du projet Manhattan pendant la Seconde Guerre mondiale.',
-         'image': 'https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg',
-         'meilleurVendeur': 'non'},
+         'image': 'https://i.ebayimg.com/images/g/zSsAAOSwejtjv4RH/s-l1600.jpg',
+         'meilleurVendeur': 'non',
+         'bandeAnnonce': 'https://youtu.be/CoXtvSRpHgM'},
+        
         {'nom': "Lendemain de veille", 
          'date': '10/02/2023', 
          'heure': '22:00', 
@@ -57,7 +67,8 @@ def filmsView(request):
          'categorie': 'Comédie',
          'description': 'Trois amis se réveillent à Las Vegas après une soirée d\'enterrement de vie de garçon complètement hors de contrôle, sans aucun souvenir de la veille et avec un tigre dans leur suite.',
          'image': 'https://m.media-amazon.com/images/M/MV5BYmIyODg0N2EtYjg5NC00NjdlLWFkZTgtMmE0NzI4ZGM5ODk1XkEyXkFqcGc@._V1_.jpg',
-         'meilleurVendeur': 'non'}
+         'meilleurVendeur': 'non',
+         'bandeAnnonce': 'https://youtu.be/hHqR9Tq16_E'}
     ]}
     return render(request, "films.html", contexte)
 
