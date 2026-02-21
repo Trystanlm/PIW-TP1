@@ -4,3 +4,9 @@ body{
     background-color: rgb(13, 2, 44);
     color: rgb(255, 94, 0);
 }
+
+.header-cinema {
+    background-image: url('../css/images/wallpaper.png'); /* À changer plus tard */
+    background-size: cover;
+    background-position: center;
+}

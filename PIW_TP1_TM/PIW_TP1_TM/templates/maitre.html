@@ -12,9 +12,9 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-light border-bottom">
-        <div class="py-2 px-3">
-            <p class="mb-0">Cinéma le Scénario</p>
+    <header class="header-cinema border-bottom">
+        <div class="py-3 px-3">
+            <h1 class="text-white mb-0 h3">Cinéma le Scénario</h1>
         </div>
     </header>
 
@@ -28,8 +28,11 @@
 
     <!-- Footer -->
     <footer class="bg-light border-top mt-4">
-        <div class="py-2 px-3">
-            <p class="mb-0">Footer - Cinéma le Scénario</p>
+        <div class="py-2 px-3 d-flex gap-3 flex-wrap">
+            <p class="mb-0">625 1re Rue Poiré, La Pocatière, QC G0R 1Z0</p>
+            <p class="mb-0">{% now "j F Y" %}</p> <!-- Affiche la date du jour formatée -->
+            <p class="mb-0">marie@cinemalescenario.com</p>
+            <p class="mb-0">Mathias et Trystan</p>
         </div>
     </footer>
 

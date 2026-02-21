@@ -1,5 +1,5 @@
-Trystan : Page maître + Accueil + Boostrap
-Mat : Films + Doc + À propos
+Trystan : Finir Page maître + Accueil + À propos
+Mat : Structure + Films + Doc 
 
 
 Page Maître

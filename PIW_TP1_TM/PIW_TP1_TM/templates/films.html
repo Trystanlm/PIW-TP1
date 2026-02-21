@@ -3,6 +3,34 @@
 {% block title %}Films{% endblock %}
 
 {% block contenu %}
-<h1>Films</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="container">
+    <h1>Films à l'affiche</h1>
+    
+    <table class="table table-dark">
+        <thead>
+            <th scope="col-1">Image</th>
+            <th scope="col-2">Nom</th>
+            <th scope="col-1">Catégorie</th>
+            <th scope="col-1">Date</th>
+            <th scope="col-1">Heure</th>
+            <th scope="col-1">Salle</th>
+            <th scope="col-3">Description</th>
+            <th scope="col-1">Meilleur vendeur</th>
+        </thead>
+        <tbody>
+            {% for film in films %}
+            <tr>
+                <td><img src="{{ film.image }}" alt="{{ film.nom }}" style="width: 100px; height: auto;"></td>
+                <th>{{ film.nom }}</th>
+                <td>{{ film.categorie }}</td>
+                <td>{{ film.date }}</td>
+                <td>{{ film.heure }}</td>
+                <td>{{ film.salle }}</td>
+                <td>{{ film.description }}</td>
+                <td>{% if film.meilleurVendeur == 'oui' %}Oui{% else %}Non{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 {% endblock %}
