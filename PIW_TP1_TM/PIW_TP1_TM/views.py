@@ -1,4 +1,6 @@
 from django.shortcuts import render
+# Importer le modèle Amelioration pour pouvoir l'utiliser dans la vue documentationView
+from .models import Amelioration
 
 #Créer les vues ici
 
@@ -6,8 +8,12 @@ def accueilView(request):
     return render(request, "accueil.html")
 
 def documentationView(request):
-    return render(request, "documentation.html")
+    # Sert à afficher les améliorations proposées pour le projet. Récupère toutes les améliorations de la base de données et les passe au template documentation.html pour les afficher.
+    ameliorations = Amelioration.objects.all()
+    return render(request, "documentation.html", {'ameliorations': ameliorations})
 
+
+# Sert à afficher les films disponibles dans la salle de cinéma.
 def filmsView(request):
     contexte = {'films': [
         {'nom': "Forrest Gump", 
