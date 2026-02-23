@@ -3,8 +3,88 @@
 {% block title %}À propos{% endblock %}
 
 {% block contenu %}
-<div class="container-lg">
+<div class="container-lg py-4">
     <h1>À propos</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="row g-4 mt-2">
+
+        <!-- Colonne gauche : environnement de développement -->
+        <div class="col-md-6">
+            <div class="card bg-dark text-light border-secondary h-100">
+                <div class="card-header border-secondary">
+                    <h2 class="fs-5 mb-0 text-white">⚙️ Environnement de développement</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table table-dark table-bordered table-sm mb-0">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-info" style="width: 45%;">Langage</th>
+                                <td>Python 3.12.x</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Framework web</th>
+                                <td>Django 5.x</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Éditeur de code</th>
+                                <td>Visual Studio Code | PyCharm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Framework CSS</th>
+                                <td>Bootstrap 5.3.8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Base de données</th>
+                                <td>SQLite</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Système d'exploitation</th>
+                                <td>Windows 11</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colonne droite : informations des concepteurs -->
+        <div class="col-md-6">
+            <div class="card bg-dark text-light border-secondary h-100">
+                <div class="card-header border-secondary">
+                    <h2 class="fs-5 mb-0 text-white">👤 Informations des concepteurs</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table table-dark table-bordered table-sm mb-0">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-info" style="width: 45%;">Noms</th>
+                                <td>Mathias et Trystan</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Numéros d'étudiant</th>
+                                <td>XXXX et 202530939</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Cours</th>
+                                <td>Interface Web</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Travail demandé</th>
+                                <td>Travail pratique 1 (TP1)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Date de remise</th>
+                                <td>27 février 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-info">Établissement</th>
+                                <td>Cégep de La Pocatière</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 {% endblock %}

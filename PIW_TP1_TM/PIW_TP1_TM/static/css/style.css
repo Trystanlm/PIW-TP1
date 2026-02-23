@@ -5,6 +5,10 @@ body{
     color: rgb(0, 0, 0);
 }
 
+footer{
+    bottom: 0;
+    width: 100%;
+}
 .header-cinema {
     background-image: url('../css/images/wallpaper.png'); /* À changer plus tard */
     background-size: cover;

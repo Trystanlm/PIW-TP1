@@ -3,8 +3,40 @@
 {% block title %}Accueil{% endblock %}
 
 {% block contenu %}
-<div class="container-lg">
+{% load static %}
+<div class="container-lg py-4">
     <h1>Accueil</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="row g-4 align-items-center mt-2">
+        <!-- Colonne gauche : description -->
+        <div class="col-md-6">
+            <h2 class="text-white fs-4 mb-3">Bienvenue au Cinéma le Scénario</h2>
+            <p class="text-light">
+                Vous devez créer un site web de gestion d’une salle de cinéma à l’aide de l’outil de développement
+                présenté dans ce cours. Le site web à développer pour ce premier travail est la navigation entre les
+                pages du site et l’affichage selon certaines dispositions d’informations prescrites dans ce travail.
+            </p>
+            <p class="text-light">
+               Votre site doit avoir une page maîtresse de présentation qui contiendra toutes les informations
+                demandées. Cette page doit également être liée à une page de styles qui sera disponible pour toutes
+                les autres pages du site. Cette page maître doit également contenir des zones d’affichages
+                prédéterminées où l’information proviendra des autres pages du site, plus de détails dans les
+                spécifications du projet, elles sont identifiées par les zones « En-tête », « Menu », « contenu » et «
+                Pied de page ».
+            </p>
+            <p class="text-light">
+                Cette page maître contiendra un en-tête, un pied de page et un menu. Ces trois sections regroupées
+                ne devraient pas prendre plus que 30% de la page. Les zones sont identifiées sur la figure 1. Le même
+                en-tête, pied de page et le menu doivent être identique sur toutes les pages.
+                Dans la section des films, vous trouverez des données à afficher selon certaines règles qui doivent être
+                respectées.
+                Vous devez appliquer des styles sur l’ensemble des pages du site, de plus, vous devez installer ou
+                utiliser « Bootstrap »
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+                <img src="{% static 'css/images/wallpaper.png' %}" alt="Cinéma le Scénario"
+                    class="img-fluid rounded shadow cinema-accueil-img">
+            </div>
+    </div>
 </div>
 {% endblock %}

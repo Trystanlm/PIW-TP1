@@ -38,11 +38,11 @@
 ### 🏠 Page Accueil (accueil.html)
 
 - ✅ Titre de page "Cinéma - Accueil"
-- ❌ **Disposition sur DEUX colonnes** (actuellement 1 colonne)
-- ❌ Description du travail (copier description de la page 1 de l'énoncé)
-- ❌ Image du cinéma
+- ✅ Disposition sur DEUX colonnes** (actuellement 1 colonne)
+- ✅ Description du travail (copier description de la page 1 de l'énoncé)
+- ✅ Image du cinéma
 - ✅ Contenu dans la zone appropriée
-- ❌ Styles appliqués pour deux colonnes
+- ✅ Styles appliqués pour deux colonnes
 
 **Améliorations possibles :**
 - Meilleure mise en page (documenter si fait)
@@ -52,12 +52,12 @@
 ### ℹ️ Page À Propos (apropos.html)
 
 - ✅ Titre de page "Cinéma - À propos"
-- ❌ **Disposition sur DEUX colonnes**
-- ❌ Description environnement de développement :
+- ✅ **Disposition sur DEUX colonnes**
+- ✅ Description environnement de développement :
   - Version Python
   - Version Django
   - Version Visual Studio Code ou PyCharm
-- ❌ Informations des concepteurs :
+- ✅ Informations des concepteurs :
   - Nom
   - Numéro d'étudiant
   - Cours
