@@ -1,6 +1,4 @@
 from django.shortcuts import render
-# Importer le modèle Amelioration pour pouvoir l'utiliser dans la vue documentationView
-from .models import Amelioration
 
 #Créer les vues ici
 
@@ -8,8 +6,14 @@ def accueilView(request):
     return render(request, "accueil.html")
 
 def documentationView(request):
-    # Sert à afficher les améliorations proposées pour le projet. Récupère toutes les améliorations de la base de données et les passe au template documentation.html pour les afficher.
-    ameliorations = Amelioration.objects.all()
+    # Améliorations hardcodées pour assurer la compatibilité entre les environnements de développement
+    ameliorations = [
+        {'nom': 'Amélioration 1: PAGE FILMS Affiches', 'description': 'Remplacement des images des deux films du fichier .txt par leur véritable affiche.'},
+        {'nom': 'Amélioration 2: PAGE FILMS Bouton', 'description': "Ajout d'un bouton pour voir les bandes-annonces pour certains films."},
+        {'nom': 'Amélioration 3: PAGE FILMS Css', 'description': 'Effet de zoom sur les images des films au survol.'},
+        {'nom': 'Amélioration 4: RESPONSIVE Bootstrap', 'description': 'Utilisation de classes Bootstrap pour rendre le site responsive. (container-lg, row, col-md-4, etc.)'},
+        {'nom': 'Amélioration 5: DOCUMENTATION Models + Bouton Ajout', 'description': "Création d'un model Amélioration et d'un super user Admin pour pouvoir ajouter une amélioration à l'aide de l'Administration Django. Un bouton bootstrap permet d'accéder directement à la page admin via un lien."},
+    ]
     return render(request, "documentation.html", {'ameliorations': ameliorations})
 
 
