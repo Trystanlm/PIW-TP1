@@ -5,7 +5,10 @@
 {% block contenu %}
 {% load static %}
 <div class="container-lg py-4">
-    <h1>Accueil</h1>
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-white"> Accueil</h1>
+        <hr class="border-secondary w-25 mx-auto mt-3">
+    </div>
     <div class="row g-4 align-items-center mt-2">
         <!-- Colonne gauche : description -->
         <div class="col-md-6">
@@ -33,8 +36,9 @@
                 utiliser « Bootstrap »
             </p>
         </div>
+        <!-- Colonne droite : Image -->
         <div class="col-md-6 text-center">
-                <img src="{% static 'css/images/wallpaper.png' %}" alt="Cinéma le Scénario"
+                <img src="{% static 'css/images/accueil.png' %}" alt="Cinéma le Scénario"
                     class="img-fluid rounded shadow cinema-accueil-img">
             </div>
     </div>

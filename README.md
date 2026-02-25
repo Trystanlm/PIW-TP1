@@ -54,16 +54,16 @@
 - ✅ Titre de page "Cinéma - À propos"
 - ✅ **Disposition sur DEUX colonnes**
 - ✅ Description environnement de développement :
-  - Version Python
-  - Version Django
-  - Version Visual Studio Code ou PyCharm
+  -✅ Version Python
+  - ✅Version Django
+  - ✅ Version Visual Studio Code ou PyCharm
 - ✅ Informations des concepteurs :
-  - Nom
-  - Numéro d'étudiant
-  - Cours
-  - Travail demandé
-  - Date de remise
-  - Cégep
+  - ✅ Nom
+  - ✅ Numéro d'étudiant
+  - ✅ Cours
+  - ✅Travail demandé
+  - ✅ Date de remise
+  -✅ Cégep
 - ✅ Contenu dans la zone appropriée
 
 **Améliorations possibles :**

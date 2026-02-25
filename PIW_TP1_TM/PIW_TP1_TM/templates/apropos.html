@@ -3,85 +3,95 @@
 {% block title %}À propos{% endblock %}
 
 {% block contenu %}
-<div class="container-lg py-4">
-    <h1>À propos</h1>
-    <div class="row g-4 mt-2">
+<div class="container-lg py-5">
+
+    <!-- Titre de la page -->
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-white">À propos</h1>
+        <hr class="border-secondary w-25 mx-auto mt-3">
+    </div>
+
+    <div class="row g-5">
 
         <!-- Colonne gauche : environnement de développement -->
         <div class="col-md-6">
-            <div class="card bg-dark text-light border-secondary h-100">
-                <div class="card-header border-secondary">
-                    <h2 class="fs-5 mb-0 text-white">⚙️ Environnement de développement</h2>
-                </div>
-                <div class="card-body">
-                    <table class="table table-dark table-bordered table-sm mb-0">
-                        <tbody>
-                            <tr>
-                                <th scope="row" class="text-info" style="width: 45%;">Langage</th>
-                                <td>Python 3.12.x</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Framework web</th>
-                                <td>Django 5.x</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Éditeur de code</th>
-                                <td>Visual Studio Code | PyCharm</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Framework CSS</th>
-                                <td>Bootstrap 5.3.8</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Base de données</th>
-                                <td>SQLite</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Système d'exploitation</th>
-                                <td>Windows 11</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="d-flex align-items-center mb-4 gap-2">
+                <span class="fs-3">⚙️</span>
+                <h2 class="fs-4 fw-bold text-white mb-0">Environnement de développement</h2>
             </div>
+
+            <ul class="list-unstyled">
+                <li class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+                    <span class="text-info fw-semibold">Langage</span>
+                    <span class="text-light">Python 3.14.0</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+                    <span class="text-info fw-semibold">Framework web</span>
+                    <span class="text-light">Django 6.0.1</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+                    <span class="text-info fw-semibold">Éditeur de code</span>
+                    <span class="text-light">VS Code (1.109.5) | PyCharm (2025.3.1.1)</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+                    <span class="text-info fw-semibold">Framework CSS</span>
+                    <span class="text-light">Bootstrap 5.3.8</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+                    <span class="text-info fw-semibold">Base de données</span>
+                    <span class="text-light">SQLite</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-3">
+                    <span class="text-info fw-semibold">Système d'exploitation</span>
+                    <span class="text-light">Windows 11</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Séparateur vertical visible sur md+ -->
+        <div class="col-md-1 d-none d-md-flex justify-content-center">
+            <div class="vr bg-secondary opacity-50 h-100"></div>
         </div>
 
         <!-- Colonne droite : informations des concepteurs -->
-        <div class="col-md-6">
-            <div class="card bg-dark text-light border-secondary h-100">
-                <div class="card-header border-secondary">
-                    <h2 class="fs-5 mb-0 text-white">👤 Informations des concepteurs</h2>
+        <div class="col-md-5">
+            <div class="d-flex align-items-center mb-4 gap-2">
+                <span class="fs-3">👤</span>
+                <h2 class="fs-4 fw-bold text-white mb-0">Informations des concepteurs</h2>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+
+                <div class="rounded-3 px-4 py-3" style="background-color: #1e1e2e;">
+                    <div class="text-info small fw-semibold text-uppercase mb-1">Noms</div>
+                    <div class="text-white fw-bold fs-5">Mathias et Trystan</div>
                 </div>
-                <div class="card-body">
-                    <table class="table table-dark table-bordered table-sm mb-0">
-                        <tbody>
-                            <tr>
-                                <th scope="row" class="text-info" style="width: 45%;">Noms</th>
-                                <td>Mathias et Trystan</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Numéros d'étudiant</th>
-                                <td>XXXX et 202530939</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Cours</th>
-                                <td>Interface Web</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Travail demandé</th>
-                                <td>Travail pratique 1 (TP1)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Date de remise</th>
-                                <td>27 février 2026</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-info">Établissement</th>
-                                <td>Cégep de La Pocatière</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                <div class="rounded-3 px-4 py-3" style="background-color: #1e1e2e;">
+                    <div class="text-info small fw-semibold text-uppercase mb-1">Numéros d'étudiant</div>
+                    <div class="text-white">202336442 et 202530939</div>
                 </div>
+
+                <div class="rounded-3 px-4 py-3" style="background-color: #1e1e2e;">
+                    <div class="text-info small fw-semibold text-uppercase mb-1">Cours</div>
+                    <div class="text-white">Interface Web</div>
+                </div>
+
+                <div class="rounded-3 px-4 py-3" style="background-color: #1e1e2e;">
+                    <div class="text-info small fw-semibold text-uppercase mb-1">Travail demandé</div>
+                    <div class="text-white">Travail pratique 1 (TP1)</div>
+                </div>
+
+                <div class="rounded-3 px-4 py-3" style="background-color: #1e1e2e;">
+                    <div class="text-info small fw-semibold text-uppercase mb-1">Date de remise</div>
+                    <div class="text-white">27 février 2026</div>
+                </div>
+
+                <div class="rounded-3 px-4 py-3" style="background-color: #1e1e2e;">
+                    <div class="text-info small fw-semibold text-uppercase mb-1">Établissement</div>
+                    <div class="text-white">Cégep de La Pocatière</div>
+                </div>
+
             </div>
         </div>
 
