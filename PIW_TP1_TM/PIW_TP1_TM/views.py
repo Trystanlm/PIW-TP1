@@ -12,7 +12,6 @@ def documentationView(request):
         {'nom': 'Amélioration 2: PAGE FILMS Bouton', 'description': "Ajout d'un bouton pour voir les bandes-annonces pour certains films."},
         {'nom': 'Amélioration 3: PAGE FILMS Css', 'description': 'Effet de zoom sur les images des films au survol.'},
         {'nom': 'Amélioration 4: RESPONSIVE Bootstrap', 'description': 'Utilisation de classes Bootstrap pour rendre le site responsive. (container-lg, row, col-md-4, etc.)'},
-        {'nom': 'Amélioration 5: DOCUMENTATION Models + Bouton Ajout', 'description': "Création d'un model Amélioration et d'un super user Admin pour pouvoir ajouter une amélioration à l'aide de l'Administration Django. Un bouton bootstrap permet d'accéder directement à la page admin via un lien."},
     ]
     return render(request, "documentation.html", {'ameliorations': ameliorations})
 
@@ -27,7 +26,7 @@ def filmsView(request):
          'categorie': 'Drame',
          'description': 'Témoin de nombreux événements marquants des années 60 et 70, un homme simple d\'esprit et au grand cœur inspire ceux qui l\'entourent à travers son optimisme constant.',
          'image': 'https://i.ebayimg.com/images/g/y9gAAOSwUQhi-9Nq/s-l1200.jpg',
-         'meilleurVendeur': 'oui',
+         'meilleurVendeur': 'Oui',
          'bandeAnnonce': 'https://youtu.be/7pDDuroFBGM'},
         
         {'nom': "Bienvenue chez les Ch'tis", 
@@ -37,7 +36,7 @@ def filmsView(request):
          'categorie': 'Comédie',
          'description': 'Témoin de nombreux événements marquants des années 60 et 70, un homme simple d\'esprit et au grand cœur inspire ceux qui l\'entourent à travers son optimisme constant.',
          'image': 'https://fr.web.img5.acsta.net/medias/nmedia/18/64/74/53/18889951.jpg',
-         'meilleurVendeur': 'non',
+         'meilleurVendeur': 'Non',
          'bandeAnnonce': 'https://youtu.be/OycTfchnopU'},
         
         {'nom': "Shrek 2", 
@@ -47,7 +46,7 @@ def filmsView(request):
          'categorie': 'Animation',
          'description': 'Shrek et Fiona reviennent de leur lune de miel pour rencontrer les parents de celle-ci. Mais ces derniers ne s\'attendaient pas à ce que leur fille épouse un ogre.',
          'image': 'https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_.jpg',
-         'meilleurVendeur': 'non',
+         'meilleurVendeur': 'Non',
          'bandeAnnonce': 'https://youtu.be/xBgSfhp5Fxo'},
         
         {'nom': "Le Loup de Wall Street", 
@@ -57,7 +56,7 @@ def filmsView(request):
          'categorie': 'Biographie',
          'description': 'L\'histoire vraie de Jordan Belfort, courtier en bourse à New York qui a bâti une fortune colossale grâce à la corruption et la fraude avant de tout perdre.',
          'image': 'https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg',
-         'meilleurVendeur': 'non',
+         'meilleurVendeur': 'Non',
          'bandeAnnonce': 'https://youtu.be/GT9UfSqBz9o'},
         
         {'nom': "Oppenheimer", 
@@ -67,7 +66,7 @@ def filmsView(request):
          'categorie': 'Biographie',
          'description': 'L\'histoire de J. Robert Oppenheimer, physicien théoricien qui a dirigé le développement de la première bombe atomique dans le cadre du projet Manhattan pendant la Seconde Guerre mondiale.',
          'image': 'https://i.ebayimg.com/images/g/zSsAAOSwejtjv4RH/s-l1600.jpg',
-         'meilleurVendeur': 'non',
+         'meilleurVendeur': 'Non',
          'bandeAnnonce': 'https://youtu.be/CoXtvSRpHgM'},
         
         {'nom': "Lendemain de veille", 
@@ -77,7 +76,7 @@ def filmsView(request):
          'categorie': 'Comédie',
          'description': 'Trois amis se réveillent à Las Vegas après une soirée d\'enterrement de vie de garçon complètement hors de contrôle, sans aucun souvenir de la veille et avec un tigre dans leur suite.',
          'image': 'https://m.media-amazon.com/images/M/MV5BYmIyODg0N2EtYjg5NC00NjdlLWFkZTgtMmE0NzI4ZGM5ODk1XkEyXkFqcGc@._V1_.jpg',
-         'meilleurVendeur': 'non',
+         'meilleurVendeur': 'Non',
          'bandeAnnonce': 'https://youtu.be/hHqR9Tq16_E'}
     ]}
     return render(request, "films.html", contexte)
