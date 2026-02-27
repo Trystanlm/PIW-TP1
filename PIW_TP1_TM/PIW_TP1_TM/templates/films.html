@@ -6,17 +6,17 @@
 <div class="container-lg films-page">
     <br>
     <div class="text-start mb-5">
-        <h1 class="display-5 fw-bold text-white">Liste des films à l'affiche</h1>
+        <h1 class="display-5 fw-bold">Liste des films à l'affiche</h1>
         <hr class="border-secondary w-25 mt-3">
     </div>
     
     {% for film in films %}
-    <div class="row mb-5 p-4" style="background-color: #1a1a2e;">
+    <div class="row mb-5 p-4" style="background-color: #1a1a1a; border-left: 3px solid #FFD700;">
         <div class="col-md-4">
             <img src="{{ film.image }}" alt="{{ film.nom }}" class="" style="width: 100%;height: 100%;object-fit: cover">
         </div>
         <div class="col-md-4 text-white">
-            <h2 class="mb-3 fw-bold text-white">{{ film.nom }}</h2>
+            <h2 class="mb-3 fw-bold">{{ film.nom }}</h2>
             <p class="mb-2"><strong>Date :</strong> {{ film.date }}</p>
             <p class="mb-2"><strong>Heure :</strong> {{ film.heure }}</p>
             <p class="mb-2"><strong>Catégorie:</strong> {{ film.categorie }}</p>
@@ -24,7 +24,7 @@
             <p class="mb-2"><strong>Meilleur vendeur:</strong> {{ film.meilleurVendeur }}</p>
         </div>
         <div class="col-md-4 text-white">
-            <h4 class="mb-3 text-white">Description</h4>
+            <h4 class="mb-3">Description</h4>
             <p>{{ film.description }}</p>
             <!-- Bouton pour voir la bande-annonce du film, qui ouvre le lien de la bande-annonce dans un nouvel onglet du navigateur. -->
             <a href="{{ film.bandeAnnonce }}" class="btn btn-info mt-3" target="_blank">Voir la bande-annonce</a>

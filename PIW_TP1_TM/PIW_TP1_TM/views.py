@@ -12,6 +12,7 @@ def documentationView(request):
         {'nom': 'Amélioration 2: PAGE FILMS Bouton', 'description': "Ajout d'un bouton pour voir les bandes-annonces pour certains films."},
         {'nom': 'Amélioration 3: PAGE FILMS Css', 'description': 'Effet de zoom sur les images des films au survol.'},
         {'nom': 'Amélioration 4: RESPONSIVE Bootstrap', 'description': 'Utilisation de classes Bootstrap pour rendre le site responsive. (container-lg, row, col-md-4, etc.)'},
+        {'nom': 'Amélioration 5: NAVIGATION Zone de contenu scrollable', 'description': 'Uniquement la zone de contenu est scrollable. Le header, la navigation et le footer restent fixes et toujours visibles, peu importe la quantité de contenu sur la page.'},
     ]
     return render(request, "documentation.html", {'ameliorations': ameliorations})
 

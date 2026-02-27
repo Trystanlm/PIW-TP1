@@ -6,14 +6,14 @@
 <div class="container-lg">
     <br>
     <div class="text-start mb-5">
-        <h1 class="display-5 fw-bold text-white">Documentation</h1>
+        <h1 class="display-5 fw-bold">Documentation</h1>
         <hr class="border-secondary w-25 mt-3">
     </div>
     
 <!-- Sert à afficher la liste des améliorations proposées pour le projet. Chaque amélioration est affichée dans une section avec son nom en titre et sa description en dessous. Les données des améliorations sont récupérées de la base de données via la vue documentationView et passées au template pour être affichées dynamiquement. -->
     {% for amelioration in ameliorations %}
-    <div class="p-4 mb-4" style="background-color: #1a1a2e;">
-        <h2 class="mb-3 text-white">{{ amelioration.nom }}</h2>
+    <div class="p-4 mb-4" style="background-color: #1a1a1a; border-left: 3px solid #FFD700;">
+        <h2 class="mb-3">{{ amelioration.nom }}</h2>
         <p class="text-white">{{ amelioration.description }}</p>
     </div>
     {% endfor %}
