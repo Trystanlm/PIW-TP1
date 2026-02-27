@@ -33,7 +33,7 @@ h1 {
 }
 
 h2, h4 {
-    color: #FFD700;
+    color: #4a90d9;
 }
 
 hr {
@@ -45,7 +45,19 @@ hr {
     transition: transform 0.3s ease;
 }
 
-.films-page img:hover {
+.film-card {
+    transition: transform 0.3s ease;
+}
+
+.film-card:hover {
+    transform: scale(1.02);
+}
+
+.cinema-accueil-img {
+    transition: transform 0.3s ease;
+}
+
+.cinema-accueil-img:hover {
     transform: scale(1.05);
 }
 
@@ -56,13 +68,13 @@ hr {
 }
 
 .btn-info {
-    background-color: #FFD700 !important;
-    border-color: #FFD700 !important;
-    color: #000 !important;
+    background-color: #4a90d9 !important;
+    border-color: #4a90d9 !important;
+    color: #fff !important;
 }
 
 .btn-info:hover {
-    background-color: #4a90d9 !important;
-    border-color: #4a90d9 !important;
+    background-color: #2e6fad !important;
+    border-color: #2e6fad !important;
     color: #fff !important;
 }
